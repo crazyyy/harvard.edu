@@ -1,0 +1,105 @@
+body {
+  font: 9pt/1.3 "Times New Roman", Times, Georgia, serif;
+  color: #282827;
+  border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 1px;
+  margin-top: 3pt;
+  clear: both;
+  margin-bottom: 0;
+}
+
+h1 a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 16pt;
+  margin-top: 10pt;
+}
+
+h3 {
+  font-size: 14pt;
+}
+
+h4 {
+  font-size: 12pt;
+}
+
+h5, h6 {
+  font-size: 9pt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  page-break-after: avoid;
+}
+
+a {
+  color: #666;
+}
+
+img {
+  border: none;
+  display: block;
+}
+
+#logo img {
+  width: 246px;
+  height: 29px;
+}
+
+p {
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+.article-feature-caption {
+  font: 8pt/1.2 Arial, Helvetica, sans-serif;
+  color: #777;
+}
+
+.article-feature-caption.hide-on-tablet {
+  display: none;
+}
+
+table {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #666;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 6px;
+  border-top: 1px solid;
+}
+
+pre, code {
+  vertical-align: baseline;
+}
+
+blockquote {
+  margin-bottom: 30px;
+  padding-left: 10px;
+  border-left: 1px solid #999;
+  page-break-inside: avoid;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.sub .story-info h3 {
+  font-size: 14px;
+}
+
+.secondary, .move, .sticky, #sticky-filter, .story-share, .sub, .next-story, .filter-options, .cat-icon, .labels, .flex-control-nav, .flex-direction-nav, .embed-container {
+  display: none !important;
+}
+
+.article-feature #slider, .article-feature #carousel {
+  display: none !important;
+}
+
+/*# sourceMappingURL=maps/print.css.map */
