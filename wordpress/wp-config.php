@@ -1,7 +1,7 @@
 <?php
-define('DB_NAME', 'DBNAME');
-define('DB_USER', 'DBUSER');
-define('DB_PASSWORD', 'DBPASS');
+define('DB_NAME', 'harvard');
+define('DB_USER', 'harvard');
+define('DB_PASSWORD', 'harvard');
 
 define('DB_HOST', 'localhost');
 

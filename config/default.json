@@ -1,6 +1,6 @@
 {
-  "domain": "wp-framework.dev",
-  "theme": "wp-framework",
+  "domain": "harvard.work",
+  "theme": "wp-harvard",
   "path": {
     "base": {
       "src":"assets/",

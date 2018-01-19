@@ -1,6 +1,6 @@
 'use strict';
 /* if work with html set TRUE, else - FALSE */
-const htmlOWp = true;
+const htmlOWp = false;
 
 /* import dependencies */
 import config from 'config';
