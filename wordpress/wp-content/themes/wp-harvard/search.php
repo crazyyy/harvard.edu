@@ -1,10 +1,18 @@
 <?php get_header(); ?>
-  <article>
+  <?php get_sidebar('big'); ?>
+  <div class="primary" id="skip">
 
-    <h1 class="search-title inner-title"><?php echo sprintf( __( '%s Search Results for ', 'wpeasy' ), $wp_query->found_posts ); echo get_search_query(); ?></h1>
-    <?php get_template_part('loop'); ?>
+    <div id="category-top">
+      <h2><?php echo sprintf( __( '%s Search Results for ', 'wpeasy' ), $wp_query->found_posts ); echo get_search_query(); ?></h2>
+
+      <div class="gocrimson-content story-list">
+        <?php get_template_part('loop'); ?>
+      </div>
+      <!-- /.gocrimson-content -->
+
+    </div>
+    <!--/#category-top-->
+
     <?php get_template_part('pagination'); ?>
-
-  </article>
-<?php get_sidebar(); ?>
+  </div>
 <?php get_footer(); ?>

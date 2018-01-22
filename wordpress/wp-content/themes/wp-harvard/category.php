@@ -1,10 +1,18 @@
 <?php get_header(); ?>
-  <article>
+  <?php get_sidebar('big'); ?>
+  <div class="primary" id="skip">
 
-    <h1 class="cat-title inner-title"><?php the_category(', '); ?></h1>
-    <?php get_template_part('loop'); ?>
+    <div id="category-top">
+      <h2><?php the_category(', '); ?></h2>
+
+      <div class="gocrimson-content story-list">
+        <?php get_template_part('loop'); ?>
+      </div>
+      <!-- /.gocrimson-content -->
+
+    </div>
+    <!--/#category-top-->
+
     <?php get_template_part('pagination'); ?>
-
-  </article>
-<?php get_sidebar(); ?>
+  </div>
 <?php get_footer(); ?>

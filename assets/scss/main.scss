@@ -183,31 +183,11 @@
   margin: 0 !important;
   padding: 0 !important;
 
-  -webkit-transform: scale(.3);
-     -moz-transform: scale(.3);
-      -ms-transform: scale(.3);
-       -o-transform: scale(.3);
-          transform: scale(.3);
-  -webkit-animation-name: bounce_spinningSquaresG;
-     -moz-animation-name: bounce_spinningSquaresG;
-      -ms-animation-name: bounce_spinningSquaresG;
-       -o-animation-name: bounce_spinningSquaresG;
-          animation-name: bounce_spinningSquaresG;
-  -webkit-animation-duration: 1.9s;
-     -moz-animation-duration: 1.9s;
-      -ms-animation-duration: 1.9s;
-       -o-animation-duration: 1.9s;
-          animation-duration: 1.9s;
-  -webkit-animation-iteration-count: infinite;
-     -moz-animation-iteration-count: infinite;
-      -ms-animation-iteration-count: infinite;
-       -o-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-direction: linear;
-     -moz-animation-direction: linear;
-      -ms-animation-direction: linear;
-       -o-animation-direction: linear;
-          animation-direction: linear;
+  transform: scale(.3);
+  animation-name: bounce_spinningSquaresG;
+  animation-duration: 1.9s;
+  animation-iteration-count: infinite;
+  animation-direction: linear;
 
   border: 0 !important;
   border-radius: 0 !important;
@@ -217,21 +197,13 @@
 #__wb_spinningSquaresG_1 {
   left: 0;
 
-  -webkit-animation-delay: .76s;
-     -moz-animation-delay: .76s;
-      -ms-animation-delay: .76s;
-       -o-animation-delay: .76s;
-          animation-delay: .76s;
+  animation-delay: .76s;
 }
 
 #__wb_spinningSquaresG_2 {
   left: 30px;
 
-  -webkit-animation-delay: .95s;
-     -moz-animation-delay: .95s;
-      -ms-animation-delay: .95s;
-       -o-animation-delay: .95s;
-          animation-delay: .95s;
+  animation-delay: .95s;
 }
 
 #__wb_spinningSquaresG_3 {
@@ -9517,4 +9489,12 @@ img.latex {
 
 .simple-homepage {
   display: none;
+}
+.pagination {
+  text-align: center;
+  a,
+  span {
+    margin: 0 5px;
+    display: inline-block;
+  }
 }
