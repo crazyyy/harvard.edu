@@ -117,7 +117,7 @@ function wpeHeadNav() {
     'after'           => '',
     'link_before'     => '',
     'link_after'      => '',
-    'items_wrap'      => '<ul class="headnav">%3$s</ul>',
+    'items_wrap'      => '<ul id="menu-utility-menu" class="utility-menu">%3$s</ul>',
     'depth'           => 0,
     'walker'          => ''
     )

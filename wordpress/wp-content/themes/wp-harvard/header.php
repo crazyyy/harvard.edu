@@ -92,13 +92,7 @@
         </div>
         <div class="menu-wrapper">
           <div class="menu-utility-menu-container">
-            <?php /* wpeHeadNav(); */ ?>
-            <ul id="menu-utility-menu" class="utility-menu">
-              <li id="menu-item-200106" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-200106"><a href="https://web.archive.org/web/20180108123823/http://www.harvard.edu/" onclick="dataLayer.push({'eventCategory': 'nav_utility_right', 'eventAction': 'nav_link', 'eventLabel': 'https://web.archive.org/web/20180108123823/http://www.harvard.edu/','event': 'gaEvent'});">harvard.edu</a></li>
-              <li id="menu-item-200115" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-200115"><a href="https://web.archive.org/web/20180108123823/http://www.harvard.edu/media-relations/photos-and-multimedia/photos" onclick="dataLayer.push({'eventCategory': 'nav_utility_right', 'eventAction': 'nav_link', 'eventLabel': 'https://web.archive.org/web/20180108123823/http://www.harvard.edu/media-relations/photos-and-multimedia/photos','event': 'gaEvent'});">Photographic Services</a></li>
-              <li id="menu-item-200116" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-200116"><a href="https://web.archive.org/web/20180108123823/http://www.harvard.edu/media-relations/media-resources" onclick="dataLayer.push({'eventCategory': 'nav_utility_right', 'eventAction': 'nav_link', 'eventLabel': 'https://web.archive.org/web/20180108123823/http://www.harvard.edu/media-relations/media-resources','event': 'gaEvent'});">Resources for Journalists</a></li>
-              <li id="menu-item-200117" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-200117"><a href="https://web.archive.org/web/20180108123823/http://hpac.harvard.edu/" onclick="dataLayer.push({'eventCategory': 'nav_utility_right', 'eventAction': 'nav_link', 'eventLabel': 'https://web.archive.org/web/20180108123823/http://hpac.harvard.edu/','event': 'gaEvent'});">HPAC</a></li>
-            </ul>
+            <?php wpeHeadNav();?>
           </div>
         </div>
       </div>
@@ -107,17 +101,17 @@
     <!--/.sticky-->
     <div id="sticky-filter" style="display: none;">
       <ul class="filter-options">
-        <li><a href="https://web.archive.org/web/20180108123823/https://news.harvard.edu/gazette/sort_by/latest/" class="filter latest">Latest</a></li>
-        <li><a href="https://web.archive.org/web/20180108123823/https://news.harvard.edu/gazette/sort_by/gz_editor_pick/" class="filter editorpick">Editor's Pick</a></li>
-        <li><a href="https://web.archive.org/web/20180108123823/https://news.harvard.edu/gazette/sort_by/gz_video/" class="filter video">Audio/Video</a></li>
-        <li><a href="https://web.archive.org/web/20180108123823/https://news.harvard.edu/gazette/sort_by/gz_photo/" class="filter photo">Photography</a></li>
-        <li><a href="https://web.archive.org/web/20180108123823/https://news.harvard.edu/gazette/sort_by/popular/" class="filter popular">Popular</a></li>
+        <li><a href="#/sort_by/latest/" class="filter latest">Latest</a></li>
+        <li><a href="#/sort_by/gz_editor_pick/" class="filter editorpick">Editor's Pick</a></li>
+        <li><a href="#/sort_by/gz_video/" class="filter video">Audio/Video</a></li>
+        <li><a href="#/sort_by/gz_photo/" class="filter photo">Photography</a></li>
+        <li><a href="#/sort_by/popular/" class="filter popular">Popular</a></li>
       </ul>
     </div>
 
     <div class="wrap" id="inner-wrap">
       <div id="logo">
-        <h1><a href="/" data-category="gazette_home" data-action="logo">Harvard Gazette</a></h1>
-        <div class="date">Monday, January 8, 2018</div>
+        <h1><a href="/" data-category="gazette_home" data-action="logo"><?php wp_title( '' ); ?></a></h1>
+        <div class="date"><?php echo date('l'); ?>, <?php echo date('F'); ?> <?php echo date('d'); ?>, <?php echo date('Y'); ?></div>
       </div>
       <!--/#logo-->
