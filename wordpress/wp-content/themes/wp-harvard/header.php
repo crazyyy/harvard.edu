@@ -7,53 +7,6 @@
 
   <title><?php wp_title( '' ); ?><?php if ( wp_title( '', false ) ) { echo ' :'; } ?> <?php bloginfo( 'name' ); ?></title>
 
-  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/wbhack.js" charset="utf-8"></script>
-  <script type="text/javascript">
-  __wbhack.init('https://web.archive.org/web');
-  </script>
-  <!-- End Wayback Rewrite JS Include -->
-
-  <script type="text/javascript">
-  /* <![CDATA[ */
-  if ('function' === typeof WPRemoteLogin) {
-    document.cookie = "wordpress_test_cookie=test; path=/";
-    if (document.cookie.match(/(;|^)\s*wordpress_test_cookie\=/)) {
-      WPRemoteLogin();
-    }
-  }
-  /* ]]> */
-  </script>
-  <script type="text/javascript">
-  /* <![CDATA[ */
-  function addLoadEvent(func) {
-    var oldonload = window.onload;
-    if (typeof window.onload != 'function') {
-      window.onload = func;
-    } else {
-      window.onload = function() {
-        oldonload();
-        func();
-      }
-    }
-  }
-  /* ]]> */
-  </script>
-  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/saved_resource(3).js"></script>
-
-  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/banner-styles.css">
-  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/iconochive.css">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/css.css" type="text/css" media="all">
-
-
-  <link rel="stylesheet" id="all-css-0-1" href="<?php echo get_template_directory_uri(); ?>/css/saved_resource.css" type="text/css" media="all">
-  <link rel="stylesheet" id="screen-css-1-1" href="<?php echo get_template_directory_uri(); ?>/css/style.css" type="text/css" media="screen">
-  <link rel="stylesheet" id="screenprojection-css-2-1" href="<?php echo get_template_directory_uri(); ?>/css/saved_resource(1).css" type="text/css" media="screen, projection">
-  <link rel="stylesheet" id="print-css-3-1" href="<?php echo get_template_directory_uri(); ?>/css/print.css" type="text/css" media="print">
-  <link rel="stylesheet" id="screenprojection-css-10-1" href="<?php echo get_template_directory_uri(); ?>/css/enhanced.css" type="text/css" media="screen, projection">
-  <link rel="stylesheet" id="all-css-11-1" href="<?php echo get_template_directory_uri(); ?>/css/saved_resource(2).css" type="text/css" media="all">
-
-
-  <!-- icons -->
   <link href="<?php echo get_template_directory_uri(); ?>/favicon.ico" rel="shortcut icon">
 
   <!-- Add to homescreen for Safari on iOS -->

@@ -46,11 +46,11 @@ add_action('init', 'wpeHeaderScripts'); // Add Scripts to wp_head
 function wpeHeaderScripts() {
   if (!is_admin()) {
     wp_deregister_script('jquery');
-    wp_register_script('jquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js', array(), '1.12.4');
+    wp_register_script('jquery', get_template_directory_uri() . '/js/jquery-and-plugins.js', array(), '1.0.0', true);
     wp_enqueue_script('jquery');
 
-    wp_register_script('jquery-migrate', '//cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.min.js', array(), '3.0.0');
-    wp_enqueue_script('jquery-migrate');
+    wp_register_script('detect-zoom', get_template_directory_uri() . '/js/detect-zoom.js', array(), '1.0.0', true);
+    wp_enqueue_script('detect-zoom');
 
     wp_register_script('modernizr', '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js', array(), '2.8.3');
     wp_enqueue_script('modernizr');

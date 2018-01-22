@@ -1,0 +1,296 @@
+.__wb_overlay {
+  position: fixed;
+  z-index: 2147483643 !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  /* IE */
+  opacity: .6;
+  /* FireFox */
+  opacity: .6;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background-color: #000000;
+  filter: alpha(opacity=60);
+  /* Safari, Opera */
+  -moz-opacity: .6;
+}
+
+#__wb_record_overlay_div {
+  cursor: wait !important;
+}
+
+.__wb_record_content {
+  position: fixed;
+  z-index: 2147483644 !important;
+  top: 50%;
+  left: 50%;
+  margin: 0 !important;
+  padding: 0 !important;
+  opacity: 1.0;
+  border-radius: 8px;
+  background-color: #ffffff !important;
+  box-shadow: 0 0 30px 5px #000000;
+}
+
+#__wb_record_content_loader {
+  width: 574px !important;
+  height: 355px !important;
+  margin-top: -177px !important;
+  margin-left: -287px !important;
+  padding-top: 30px !important;
+  cursor: wait !important;
+}
+
+#__wb_record_content_done {
+  width: 855px !important;
+  height: 355px !important;
+  margin-top: -177px !important;
+  margin-left: -427px !important;
+}
+
+.__wb_record_content > * {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+  display: block !important;
+  margin: auto !important;
+  text-align: center !important;
+}
+
+.__wb_record_content > wb_h1 {
+  font-size: 36px !important;
+  font-weight: normal !important;
+  line-height: 2em;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 0 0 0 !important;
+  padding: 0 !important;
+  color: #222222 !important;
+}
+
+.__wb_record_content > wb_p {
+  font-size: 17px !important;
+  line-height: 2em;
+  margin: 8px 0 8px 0 !important;
+  padding: 0 !important;
+  color: #222222 !important;
+}
+
+.__wb_record_content > #_wb_logo {
+  margin-bottom: 10px !important;
+}
+
+.__wb_record_content > #_wb_spinner {
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+}
+
+.__wb_record_content > #_wb_curr_url {
+  font-weight: bold !important;
+  text-decoration: underline !important;
+}
+
+#__wb_record_content_done > #__wb_link {
+  font-size: 20px !important;
+  width: 80% !important;
+  height: auto !important;
+  padding: 3px !important;
+  text-align: center !important;
+  border: 1px !important;
+  border-style: solid !important;
+  border-color: #aaaaaa !important;
+}
+
+#__wb_record_content_done > #__wb_link:focus {
+  border-color: #428bca !important;
+  outline: 0 !important;
+}
+
+#__wb_record_content_done > #__wb_donate_close {
+  font-size: 18px !important;
+  display: inline-block;
+  float: right;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 8px 8px 0 0 !important;
+}
+
+/* DONATE */
+#__wb_donate_close > #__wb_record_done_close {
+  display: inline-block;
+  cursor: pointer !important;
+  vertical-align: bottom !important;
+}
+
+#__wb_record_content_done > #__wb_donate_close a {
+  color: #428bca !important;
+}
+
+#__wb_record_content_done > #__wb_donate_close a:link {
+  margin-right: 16px !important;
+  text-decoration: none !important;
+  color: #428bca !important;
+}
+
+#__wb_record_content_done > #__wb_donate_close a:visited {
+  color: #428bca !important;
+}
+
+#__wb_record_content_done > #__wb_donate_close a:hover {
+  color: #00b1f7 !important;
+}
+
+/* Spinner */
+#__wb_spinningSquaresG {
+  position: relative;
+  width: 240px;
+  height: 20px;
+  margin: 30px 0 30px 160px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+}
+
+.__wb_spinningSquaresG {
+  position: absolute;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  margin: 0 !important;
+  padding: 0 !important;
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+  -o-transform: scale(0.3);
+  transform: scale(0.3);
+  -webkit-animation-name: bounce_spinningSquaresG;
+  -moz-animation-name: bounce_spinningSquaresG;
+  -ms-animation-name: bounce_spinningSquaresG;
+  -o-animation-name: bounce_spinningSquaresG;
+  animation-name: bounce_spinningSquaresG;
+  -webkit-animation-duration: 1.9s;
+  -moz-animation-duration: 1.9s;
+  -ms-animation-duration: 1.9s;
+  -o-animation-duration: 1.9s;
+  animation-duration: 1.9s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: linear;
+  -moz-animation-direction: linear;
+  -ms-animation-direction: linear;
+  -o-animation-direction: linear;
+  animation-direction: linear;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background-color: #000000;
+}
+
+#__wb_spinningSquaresG_1 {
+  left: 0;
+  -webkit-animation-delay: .76s;
+  -moz-animation-delay: .76s;
+  -ms-animation-delay: .76s;
+  -o-animation-delay: .76s;
+  animation-delay: .76s;
+}
+
+#__wb_spinningSquaresG_2 {
+  left: 30px;
+  -webkit-animation-delay: .95s;
+  -moz-animation-delay: .95s;
+  -ms-animation-delay: .95s;
+  -o-animation-delay: .95s;
+  animation-delay: .95s;
+}
+
+#__wb_spinningSquaresG_3 {
+  left: 60px;
+  animation-delay: 1.14s;
+}
+
+#__wb_spinningSquaresG_4 {
+  left: 90px;
+  animation-delay: 1.33s;
+}
+
+#__wb_spinningSquaresG_5 {
+  left: 120px;
+  animation-delay: 1.52s;
+}
+
+#__wb_spinningSquaresG_6 {
+  left: 150px;
+  animation-delay: 1.71s;
+}
+
+#__wb_spinningSquaresG_7 {
+  left: 180px;
+  animation-delay: 1.9s;
+}
+
+#__wb_spinningSquaresG_8 {
+  left: 210px;
+  animation-delay: 2.09s;
+}
+
+@-moz-keyframes bounce_spinningSquaresG {
+  0% {
+    -moz-transform: scale(1);
+    background-color: #000000;
+  }
+  100% {
+    -moz-transform: scale(0.3) rotate(90deg);
+    background-color: #ffffff;
+  }
+}
+
+@-webkit-keyframes bounce_spinningSquaresG {
+  0% {
+    -webkit-transform: scale(1);
+    background-color: #000000;
+  }
+  100% {
+    -webkit-transform: scale(0.3) rotate(90deg);
+    background-color: #ffffff;
+  }
+}
+
+@-ms-keyframes bounce_spinningSquaresG {
+  0% {
+    -ms-transform: scale(1);
+    background-color: #000000;
+  }
+  100% {
+    -ms-transform: scale(0.3) rotate(90deg);
+    background-color: #ffffff;
+  }
+}
+
+@-o-keyframes bounce_spinningSquaresG {
+  0% {
+    -o-transform: scale(1);
+    background-color: #000000;
+  }
+  100% {
+    -o-transform: scale(0.3) rotate(90deg);
+    background-color: #ffffff;
+  }
+}
+
+@keyframes bounce_spinningSquaresG {
+  0% {
+    transform: scale(1);
+    background-color: #000000;
+  }
+  100% {
+    transform: scale(0.3) rotate(90deg);
+    background-color: #ffffff;
+  }
+}
+
+/*# sourceMappingURL=maps/record.css.map */

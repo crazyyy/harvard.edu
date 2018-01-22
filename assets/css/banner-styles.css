@@ -1,79 +1,80 @@
-@import url(record.css);
-/* for SPN1 */
 #wm-ipp {
-  min-height: 65px;
-  left: 0;
+  font-size: 11px;
   top: 0;
-  padding: 0;
+  left: 0;
+  min-height: 65px;
   margin: 0;
+  padding: 0;
   border-radius: 0;
   background-color: transparent;
-  font-size: 11px;
 }
 
 #wm-ipp * {
   font-family: Lucida Grande, Helvetica, Arial, sans-serif;
   font-size: 12px;
   line-height: 1.2;
-  letter-spacing: 0;
+  float: none;
   width: auto;
   height: auto;
-  outline: none;
-  float: none;
   text-align: left;
+  letter-spacing: 0;
+  color: #000000;
   border: none;
-  color: #000;
+  outline: none;
 }
 
 #wm-ipp div {
+  z-index: 2147483640;
   display: block;
-  padding: 0;
+  height: auto;
   margin: 0;
+  padding: 0;
   border: none;
   border-radius: 0;
   background-color: transparent;
   background-image: none;
-  z-index: 2147483640;
-  height: auto;
 }
 
-#wm-ipp tr, #wm-ipp td, #wm-ipp a, #wm-ipp form {
-  padding: 0;
+#wm-ipp tr,
+#wm-ipp td,
+#wm-ipp a,
+#wm-ipp form {
+  z-index: 2147483640;
+  height: auto;
   margin: 0;
+  padding: 0;
   border: none;
   border-radius: 0;
   background-color: transparent;
   background-image: none;
-  z-index: 2147483640;
-  height: auto;
 }
 
 #wm-ipp table {
-  border: none;
-  border-collapse: collapse;
+  font-size: inherit;
+  width: auto;
   margin: 0;
   padding: 0;
-  width: auto;
-  font-size: inherit;
+  border-collapse: collapse;
+  border: none;
 }
 
 #wm-ipp form input {
-  padding: 1px;
-  height: auto;
   display: inline;
+  height: auto;
   margin: 0;
-  color: #000;
-  background: none #fff;
-  border: 1px solid #666;
+  padding: 1px;
+  color: #000000;
+  border: 1px solid #666666;
+  background: none #ffffff;
 }
 
 #wm-ipp form input[type=submit] {
-  padding: 0 8px !important;
-  margin: 1px 0 1px 5px !important;
   width: auto !important;
-  border: 1px solid #000 !important;
-  background: #fff !important;
-  color: #000 !important;
+  margin: 1px 0 1px 5px !important;
+  padding: 0 8px !important;
+  color: #000000 !important;
+  border: 1px solid #000000 !important;
+  background: #ffffff !important;
 }
 
 #wm-ipp a:hover {
@@ -82,39 +83,39 @@
 
 #wm-ipp a.wm-btn:hover {
   text-decoration: none;
-  color: #ff0 !important;
+  color: #ffff00 !important;
 }
 
 #wm-ipp a.wm-btn:hover span {
-  color: #ff0 !important;
+  color: #ffff00 !important;
 }
 
 #wm-ipp #wm-ipp-inside {
   margin: 0 6px;
-  border: 5px solid #000;
+  border: 5px solid #000000;
   border-top: none;
-  background-color: rgba(255, 255, 255, 0.9);
-  -moz-box-shadow: 1px 1px 4px #333;
-  -webkit-box-shadow: 1px 1px 4px #333;
-  box-shadow: 1px 1px 4px #333;
   border-radius: 0 0 8px 8px;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 1px 1px 4px #333333;
+  -moz-box-shadow: 1px 1px 4px #333333;
+  box-shadow: 1px 1px 4px #333333;
 }
 
 #wm-ipp #wm-logo {
+  width: 15%;
+  min-width: 110px;
   padding: 0 10px;
   vertical-align: middle;
-  min-width: 110px;
-  width: 15%;
 }
 
 #wm-ipp table tr::before, #wm-ipp table tr::after {
-  margin: 0;
   height: auto;
+  margin: 0;
 }
 
 #wm-ipp table.c {
-  vertical-align: top;
   margin-left: 4px;
+  vertical-align: top;
 }
 
 #wm-ipp .c td.u {
@@ -128,25 +129,25 @@
 }
 
 #wm-ipp .c td.n a {
-  text-decoration: none;
-  color: #33f;
   font-weight: bold;
+  text-decoration: none;
+  color: #3333ff;
 }
 
 #wm-ipp .c td.n td.b {
+  overflow: visible;
   padding-right: 6px !important;
   text-align: right !important;
-  overflow: visible;
-  white-space: nowrap;
-  color: #99a;
   vertical-align: middle;
+  white-space: nowrap;
+  color: #9999aa;
 }
 
 #wm-ipp .c td.n td.c {
-  background: #000;
-  color: #ff0;
   font-weight: bold;
   text-align: center;
+  color: #ffff00;
+  background: #000000;
 }
 
 #wm-ipp.hi .c td.n td.c {
@@ -154,18 +155,18 @@
 }
 
 #wm-ipp .c td.n td.f {
+  overflow: visible;
   padding-left: 6px !important;
   text-align: left !important;
-  overflow: visible;
-  white-space: nowrap;
-  color: #99a;
   vertical-align: middle;
+  white-space: nowrap;
+  color: #9999aa;
 }
 
 #wm-ipp .c td.n tr.m td {
-  text-transform: uppercase;
-  white-space: nowrap;
   padding: 2px 0;
+  white-space: nowrap;
+  text-transform: uppercase;
 }
 
 #wm-ipp .c td.s {
@@ -179,20 +180,20 @@
 }
 
 #wm-ipp .c td.s a.t {
-  color: #33f;
   font-weight: bold;
   line-height: 1.8;
+  color: #3333ff;
 }
 
 #wm-ipp .c td.s div.r {
-  color: #666;
   font-size: 9px;
   white-space: nowrap;
+  color: #666666;
 }
 
 #wm-ipp .c td.k {
-  vertical-align: bottom;
   padding-bottom: 2px;
+  vertical-align: bottom;
 }
 
 #wm-ipp .c td.n tr.y td, #wm-ipp .c td.s {
@@ -201,15 +202,16 @@
 
 /* selectors are intentionally verbose to ensure priority */
 div#wm-ipp-sparkline {
+  line-height: .9;
   position: relative;
+  cursor: pointer;
   /* for positioning markers */
   white-space: nowrap;
-  background-color: #fff;
-  cursor: pointer;
-  line-height: 0.9;
+  background-color: #ffffff;
 }
 
-#sparklineImgId, #wm-sparkline-canvas {
+#sparklineImgId,
+#wm-sparkline-canvas {
   position: relative;
   z-index: 9012;
   max-width: none;
@@ -218,7 +220,7 @@ div#wm-ipp-sparkline {
 #wm-ipp-sparkline div.yt {
   position: absolute;
   z-index: 9010 !important;
-  background-color: #ff0 !important;
+  background-color: #ffff00 !important;
 }
 
 #wm-ipp-sparkline div.mt {
@@ -232,24 +234,24 @@ div#wm-ipp-sparkline {
 }
 
 #wm-ipp .r a {
-  color: #33f;
-  border: none;
   position: relative;
+  text-decoration: none;
+  color: #3333ff;
+  border: none;
   background-color: transparent;
   background-repeat: no-repeat !important;
   background-position: 100% 100% !important;
-  text-decoration: none;
 }
 
 #wm-ipp #wm-capinfo .c-logo {
   display: block;
   float: left;
-  margin-right: 3px;
+  overflow: hidden;
   width: 90px;
   min-height: 90px;
   max-height: 290px;
+  margin-right: 3px;
   border-radius: 45px;
-  overflow: hidden;
   background-position: 50%;
   background-size: auto 90px;
   box-shadow: 0 0 2px 2px #d0d0d0 inset;
@@ -260,9 +262,9 @@ div#wm-ipp-sparkline {
 }
 
 #wm-ipp #wm-capinfo .c-logo img {
-  height: 90px;
   position: relative;
   left: -50%;
+  height: 90px;
 }
 
 #wm-ipp #wm-capinfo .wm-title {
@@ -271,26 +273,26 @@ div#wm-ipp-sparkline {
 
 #wm-ipp #wm-capinfo a.wm-selector {
   display: inline-block;
-  color: #aaa;
-  text-decoration: none !important;
   padding: 2px 8px;
+  text-decoration: none !important;
+  color: #aaaaaa;
 }
 
 #wm-ipp #wm-capinfo a.wm-selector.selected {
-  background-color: #666;
+  background-color: #666666;
 }
 
 #wm-ipp #wm-capinfo a.wm-selector:hover {
-  color: #fff;
+  color: #ffffff;
 }
 
 #wm-ipp #wm-expand {
   right: 1px;
   bottom: -1px;
-  color: #ffffff;
-  background-color: #666 !important;
   padding: 0 5px 0 3px !important;
+  color: #ffffff;
   border-radius: 3px 3px 0 0 !important;
+  background-color: #666666 !important;
 }
 
 #wm-ipp #wm-expand span {
@@ -299,7 +301,7 @@ div#wm-ipp-sparkline {
 
 #wm-ipp #wm-expand #wm-expand-icon {
   display: inline-block;
-  transition: transform 0.5s;
+  transition: transform .5s;
   transform-origin: 50% 45%;
 }
 
@@ -316,7 +318,7 @@ div#wm-ipp-sparkline {
 }
 
 #wm-ipp #wm-graph-anchor {
-  border-right: 1px solid #ccc;
+  border-right: 1px solid #cccccc;
 }
 
 /* time coherence */
@@ -351,51 +353,51 @@ html.wb-highlight {
 }
 
 #wm-btns > #wm-save-snapshot-open {
-  margin-right: 7px;
   top: -6px;
+  margin-right: 7px;
 }
 
 #wm-btns > #wm-sign-in {
-  display: none;
-  margin-right: 7px;
   top: -8px;
+  display: none;
+  width: 10px;
+  height: 10px;
+  margin-right: 7px;
+  padding-right: 2px;
+  padding-bottom: 2px;
   /*
     round border around sign in button
     */
   border: 2px #333333 solid;
   border-radius: 14px;
-  padding-right: 2px;
-  padding-bottom: 2px;
-  width: 10px;
-  height: 10px;
 }
 
 #wm-save-snapshot-open > .iconochive-web {
-  color: #000;
   font-size: 160%;
+  color: #000000;
 }
 
 #wm-btns > #wm-save-snapshot-in-progress {
-  display: none;
   font-size: 160%;
-  opacity: 0.5;
   position: relative;
-  margin-right: 7px;
   top: -5px;
+  display: none;
+  margin-right: 7px;
+  opacity: .5;
 }
 
 #wm-btns > #wm-save-snapshot-success {
-  display: none;
-  color: green;
   position: relative;
   top: -7px;
+  display: none;
+  color: green;
 }
 
 #wm-btns > #wm-save-snapshot-fail {
-  display: none;
-  color: red;
   position: relative;
   top: -7px;
+  display: none;
+  color: red;
 }
 
 /*# sourceMappingURL=maps/banner-styles.css.map */

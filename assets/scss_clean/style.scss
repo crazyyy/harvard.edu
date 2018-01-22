@@ -1,0 +1,29 @@
+.taxonomy-images-the-terms {
+  zoom: 1;
+
+  margin: 10px 0;
+  padding: 0;
+  &:before,
+  &:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+
+    height: 0;
+
+    content: '\0020';
+  }
+  li,
+  a,
+  img {
+    float: left;
+
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    margin: 0 10px 10px 0;
+
+    list-style-type: none;
+  }
+}
